@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/next";
 import { Oswald, Raleway, Rozha_One } from "next/font/google";
 
 import "./globals.css";
@@ -37,6 +38,7 @@ export default function RootLayout({
         className={`${oswald.variable} ${raleway.variable} ${rozhaOne.variable} antialiased`}
       >
         {children}
+        <Analytics />
       </body>
     </html>
   );
