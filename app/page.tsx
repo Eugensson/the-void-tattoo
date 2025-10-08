@@ -1,4 +1,5 @@
 import { Hero } from "@/components/hero";
+import { About } from "@/components/about";
 import { Header } from "@/components/header";
 
 const Home = () => {
@@ -6,6 +7,7 @@ const Home = () => {
     <main className="w-full max-w-480 mx-auto overflow-hidden bg-white">
       <Header />
       <Hero />
+      <About />
       <div className="h-1000" />
     </main>
   );

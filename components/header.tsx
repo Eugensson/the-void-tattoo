@@ -26,11 +26,11 @@ export const Header = () => {
   return (
     <header
       className={cn(
-        "fixed left-0 right-0 top-0 z-10 max-w-480 w-full mx-auto transition-all duration-300 bg-white",
+        "fixed left-0 right-0 top-0 z-10 max-w-480 w-full mx-auto transition-all duration-100 bg-white",
         isActive ? "h-25 lg:h-27.5 shadow-lg" : "h-30 lg:h-37.5"
       )}
     >
-      <div className="container flex justify-between items-center h-full">
+      <div className="pl-12.5 pr-15 flex justify-between items-center h-full">
         <Logo />
         <Nav
           containerStyles="hidden xl:flex"
@@ -46,7 +46,9 @@ export const Header = () => {
         </button>
         <MobileNav
           containerStyles={cn(
-            navMobile ? "max-h-full" : "max-h-0",
+            navMobile
+              ? "max-h-full pointer-events-auto"
+              : "max-h-0 overflow-hidden pointer-events-none",
             isActive ? "top-25 lg:top-27.5" : "top-30 lg:top-37.5",
             "fixed left-0 -z-10 w-full h-full transition-all duration-300 bg-white"
           )}

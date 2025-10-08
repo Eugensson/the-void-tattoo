@@ -14,7 +14,7 @@ export const Socials = () => {
             aria-label={`${href} link`}
             className="hover:text-red transition-colors duration-300"
           >
-            <Icon size={24} />
+            <Icon size={22} />
           </Link>
         </li>
       ))}
