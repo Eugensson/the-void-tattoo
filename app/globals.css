@@ -9,6 +9,7 @@
   --color-dark: #111111;
   --color-grey: #555555;
   --color-body: #e5e5e5;
+  --color-gallery: #f9f9f9
   --color-red: #ff0000;
 
   --breakpoint-sm: 640px;
@@ -43,7 +44,7 @@ body {
 }
 
 .h2 {
-  @apply mb-9.5 max-w-59 text-[40px] xl:text-[85px] text-dark uppercase font-primary leading-none;
+  @apply mb-9.5 max-w-100 text-[40px] xl:text-[85px] text-dark uppercase font-primary leading-none;
 }
 
 .btn {

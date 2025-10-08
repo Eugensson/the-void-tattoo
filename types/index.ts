@@ -10,3 +10,10 @@ export type Social = {
   href: string;
   icon: IconType;
 };
+
+export type GalleryItem = {
+  src: string;
+  original: string;
+  width: number;
+  height: number;
+};
