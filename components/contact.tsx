@@ -26,7 +26,7 @@ export const Contact = () => {
                     title,
                     subtitle,
                     address: { icon: IconAdress, name },
-                    phone: { icon: IconPhone, number },
+                    phone: { icon: IconPhone, label, number },
                     email: { icon: IconEmail, address },
                     link,
                   },
@@ -49,21 +49,20 @@ export const Contact = () => {
                       <li>
                         <Link
                           href={`tel:${number}`}
-                          rel="noopener noreferrer"
-                          target="_blank"
-                          aria-label={`${number} link`}
+                          rel="noreferrer noopener"
+                          aria-label="Call to phone"
                           className="flex items-center gap-2.5 font-medium hover:text-red-500 transition-colors duration-300"
                         >
                           <IconPhone />
-                          {number}
+                          {label}
                         </Link>
                       </li>
                       <li>
                         <Link
                           href={`mailto:${address}`}
-                          rel="noopener noreferrer"
                           target="_blank"
-                          aria-label={`${address} link`}
+                          aria-label="Send email"
+                          rel="noreferrer noopener"
                           className="flex items-center gap-2.5 font-medium hover:text-red-500 transition-colors duration-300"
                         >
                           <IconEmail />

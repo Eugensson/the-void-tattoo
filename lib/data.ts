@@ -5,6 +5,7 @@ import {
   RiYoutubeLine,
   RiPinterestLine,
 } from "react-icons/ri";
+import { FiSend } from "react-icons/fi";
 import { LiaPhoneSolid } from "react-icons/lia";
 import { TfiLocationPin } from "react-icons/tfi";
 import { RxEnvelopeClosed } from "react-icons/rx";
@@ -156,7 +157,8 @@ export const contactData: ContactItem[] = [
     },
     phone: {
       icon: LiaPhoneSolid,
-      number: "+1 213 555 0148",
+      label: "+1 213 555 0148",
+      number: "+12135550148",
     },
     email: {
       icon: RxEnvelopeClosed,
@@ -174,7 +176,8 @@ export const contactData: ContactItem[] = [
     },
     phone: {
       icon: LiaPhoneSolid,
-      number: "+1 646 555 0173",
+      label: "+1 646 555 0173",
+      number: "+16465550173",
     },
     email: {
       icon: RxEnvelopeClosed,
@@ -183,3 +186,51 @@ export const contactData: ContactItem[] = [
     link: "Get location",
   },
 ];
+
+export const footerData = {
+  about: {
+    title: "About void tattoo",
+    subtitle:
+      "Discover our tattoo studio where creativity meets precision. We craft custom designs in a clean and welcoming environment for every client.",
+    address: {
+      icon: TfiLocationPin,
+      name: "1630 Elm Drive, New York City",
+    },
+    phone: {
+      icon: LiaPhoneSolid,
+      label: "+1 646 555 0173",
+      number: "+16465550173",
+    },
+    email: {
+      icon: RxEnvelopeClosed,
+      address: "contact_ny@v-tattoo.com",
+    },
+  },
+  links: {
+    title: "Useful links",
+    items: [
+      { href: "/", name: "About me" },
+      { href: "/", name: "My gallery" },
+      { href: "/", name: "My services" },
+      { href: "/", name: "Contact me" },
+    ],
+  },
+  program: {
+    title: "Working Time",
+    items: [
+      { name: "Mon - Tue / Appointment" },
+      { name: "Wed - Fri / 10:00 - 9:00pm" },
+      { name: "Sat / 10:00 - 6:00pm" },
+      { name: "Sun / no work on this day" },
+    ],
+  },
+  newsletter: {
+    title: "Newsletter",
+    subtitle:
+      "Stay updated with our latest tattoo designs, special offers, and studio news.",
+    form: {
+      placeholder: "Your email address",
+      icon: FiSend,
+    },
+  },
+};

@@ -32,3 +32,13 @@ export const heroContainerVariant = {
     } as Transition,
   },
 };
+
+export const staggerContainer = {
+  hidden: {},
+  show: {
+    transition: {
+      staggerChildren: 0.3,
+      delayChildren: 0.2,
+    } as Transition,
+  },
+};
