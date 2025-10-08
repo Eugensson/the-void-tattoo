@@ -5,17 +5,27 @@ import {
   RiYoutubeLine,
   RiPinterestLine,
 } from "react-icons/ri";
+import { LiaPhoneSolid } from "react-icons/lia";
+import { TfiLocationPin } from "react-icons/tfi";
+import { RxEnvelopeClosed } from "react-icons/rx";
 import { BiSolidQuoteLeft } from "react-icons/bi";
 
-import { GalleryItem, NavItem, Skill, Social, Testimonial } from "@/types";
+import {
+  ContactItem,
+  GalleryItem,
+  NavItem,
+  Skill,
+  Social,
+  Testimonial,
+} from "@/types";
 
 export const navData: NavItem[] = [
   { name: "Home", path: "home", offset: -150 },
   { name: "About", path: "about", offset: 0 },
   { name: "Gallery", path: "gallery", offset: 0 },
-  { name: "Interview", path: "interview", offset: -100 },
+  { name: "Interview", path: "interview", offset: -150 },
   { name: "Articles", path: "articles", offset: -100 },
-  { name: "Contact", path: "contact", offset: 0 },
+  { name: "Contact", path: "contact", offset: 20 },
 ];
 
 export const socialData: Social[] = [
@@ -132,5 +142,44 @@ export const testimonialData: Testimonial[] = [
     name: "Michael Davis",
     occupation: "Photographer",
     icon: BiSolidQuoteLeft,
+  },
+];
+
+export const contactData: ContactItem[] = [
+  {
+    title: "LA office",
+    subtitle:
+      "Located in the heart of Los Angeles, our studio blends creativity with precision. We focus on custom tattoo designs, clean lines, and a relaxed atmosphere for every client.",
+    address: {
+      icon: TfiLocationPin,
+      name: "784 Norman Street, Los Angeles",
+    },
+    phone: {
+      icon: LiaPhoneSolid,
+      number: "+1 213 555 0148",
+    },
+    email: {
+      icon: RxEnvelopeClosed,
+      address: "contact_la@v-tattoo.com",
+    },
+    link: "Get location",
+  },
+  {
+    title: "NYC office",
+    subtitle:
+      "Our New York City studio is a creative space where art meets professionalism. Experience modern tattoo artistry and consultation in a comfortable space.",
+    address: {
+      icon: TfiLocationPin,
+      name: "1630 Elm Drive, New York City",
+    },
+    phone: {
+      icon: LiaPhoneSolid,
+      number: "+1 646 555 0173",
+    },
+    email: {
+      icon: RxEnvelopeClosed,
+      address: "contact_ny@v-tattoo.com",
+    },
+    link: "Get location",
   },
 ];

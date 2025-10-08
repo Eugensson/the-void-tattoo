@@ -30,3 +30,21 @@ export type Testimonial = {
   occupation: string;
   icon: IconType;
 };
+
+export type ContactItem = {
+  title: string;
+  subtitle: string;
+  address: {
+    icon: IconType;
+    name: string;
+  };
+  phone: {
+    icon: IconType;
+    number: string;
+  };
+  email: {
+    icon: IconType;
+    address: string;
+  };
+  link: string;
+};

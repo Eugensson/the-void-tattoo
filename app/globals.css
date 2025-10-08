@@ -9,8 +9,7 @@
   --color-dark: #111111;
   --color-grey: #555555;
   --color-body: #e5e5e5;
-  --color-gallery: #f9f9f9
-  --color-red: #ff0000;
+  --color-gallery: #f9f9f9;
 
   --breakpoint-sm: 640px;
   --breakpoint-md: 768px;
@@ -44,7 +43,7 @@ body {
 }
 
 .h2 {
-  @apply mb-9.5 max-w-100 text-[40px] xl:text-[85px] text-dark uppercase font-primary leading-none;
+  @apply mb-9.5 max-w-150 text-[40px] xl:text-[85px] text-dark uppercase font-primary leading-none;
 }
 
 .btn {
@@ -73,4 +72,12 @@ body {
 
 .active {
   @apply border-b-2 border-dark;
+}
+
+.input {
+  @apply pb-4 border-b border-dark focus:border-red-500 placeholder:text-[#555555] italic tracking-[0.06em] outline-none;
+}
+
+.textarea {
+  @apply h-30 w-full pb-4 border-b border-dark focus:border-red-500 placeholder:text-[#555555] italic tracking-[0.06em] outline-none resize-none;
 }

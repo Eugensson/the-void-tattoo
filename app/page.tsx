@@ -3,6 +3,7 @@ import { About } from "@/components/about";
 import { Header } from "@/components/header";
 import { Skills } from "@/components/skills";
 import { Gallery } from "@/components/gallery";
+import { Contact } from "@/components/contact";
 import { Interview } from "@/components/interview";
 import { Testimonial } from "@/components/testimonial";
 
@@ -16,6 +17,7 @@ const Home = () => {
       <Skills />
       <Interview />
       <Testimonial />
+      <Contact />
       <div className="h-1000" />
     </main>
   );

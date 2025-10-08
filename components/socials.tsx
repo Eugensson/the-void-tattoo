@@ -12,7 +12,7 @@ export const Socials = () => {
             target="_blank"
             rel="noopener noreferrer"
             aria-label={`${href} link`}
-            className="hover:text-red transition-colors duration-300"
+            className="hover:text-red-500 transition-colors duration-300"
           >
             <Icon size={22} />
           </Link>
