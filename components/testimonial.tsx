@@ -16,7 +16,7 @@ export const Testimonial = () => {
       initial="hidden"
       whileInView={"show"}
       viewport={{ once: false, amount: 0.2 }}
-      className="py-10 lg:pt-0 lg:pb-40 font-primary"
+      className="py-10 lg:py-40 font-primary"
       id="articles"
     >
       <div className="container">

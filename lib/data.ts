@@ -13,8 +13,8 @@ export const navData: NavItem[] = [
   { name: "Home", path: "home", offset: -150 },
   { name: "About", path: "about", offset: 0 },
   { name: "Gallery", path: "gallery", offset: 0 },
-  { name: "Interview", path: "interview", offset: 0 },
-  { name: "Articles", path: "articles", offset: 0 },
+  { name: "Interview", path: "interview", offset: -100 },
+  { name: "Articles", path: "articles", offset: -100 },
   { name: "Contact", path: "contact", offset: 0 },
 ];
 

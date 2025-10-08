@@ -3,6 +3,7 @@ import { About } from "@/components/about";
 import { Header } from "@/components/header";
 import { Skills } from "@/components/skills";
 import { Gallery } from "@/components/gallery";
+import { Interview } from "@/components/interview";
 import { Testimonial } from "@/components/testimonial";
 
 const Home = () => {
@@ -13,6 +14,7 @@ const Home = () => {
       <About />
       <Gallery />
       <Skills />
+      <Interview />
       <Testimonial />
       <div className="h-1000" />
     </main>
