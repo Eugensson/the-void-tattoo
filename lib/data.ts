@@ -5,8 +5,9 @@ import {
   RiYoutubeLine,
   RiPinterestLine,
 } from "react-icons/ri";
+import { BiSolidQuoteLeft } from "react-icons/bi";
 
-import { GalleryItem, NavItem, Skill, Social } from "@/types";
+import { GalleryItem, NavItem, Skill, Social, Testimonial } from "@/types";
 
 export const navData: NavItem[] = [
   { name: "Home", path: "home", offset: -150 },
@@ -81,4 +82,55 @@ export const skillsData: Skill[] = [
   { label: "Safely Piercing", target: 80 },
   { label: "Full Color Tattoo", target: 75 },
   { label: "Temporary Tattoo", target: 95 },
+];
+
+export const testimonialData: Testimonial[] = [
+  {
+    id: "1",
+    message:
+      "The entire team is incredibly professional and welcoming. They listened carefully to my ideas and turned them into an amazing tattoo. The studio feels clean, safe, and inspiring—definitely a place where creativity meets perfection.",
+    name: "Jack Geoffrey",
+    occupation: "Tattoo Artist",
+    icon: BiSolidQuoteLeft,
+  },
+  {
+    id: "2",
+    message:
+      "I was nervous about getting my first tattoo, but the artists here made me feel completely at ease. They explained every step, kept everything spotless, and the final result was even better than I imagined. Highly recommended!",
+    name: "Douglas Hane",
+    occupation: "Tattoo Artist",
+    icon: BiSolidQuoteLeft,
+  },
+  {
+    id: "3",
+    message:
+      "From the first consultation to the final touch, everything was flawless. The artists take time to understand your vision and execute it with precision. The attention to detail and atmosphere here are truly unmatched.",
+    name: "Megan Lowe",
+    occupation: "Model & Influencer",
+    icon: BiSolidQuoteLeft,
+  },
+  {
+    id: "4",
+    message:
+      "Absolutely love my tattoo! The design came out better than expected, and the artist was so patient and talented. You can tell they really care about their clients and the quality of their work. I’ll definitely come back.",
+    name: "Chris Nolan",
+    occupation: "Musician",
+    icon: BiSolidQuoteLeft,
+  },
+  {
+    id: "5",
+    message:
+      "A great experience from start to finish. The staff were friendly, the studio spotless, and the artistry outstanding. They perfectly captured what I wanted and made me feel comfortable the entire time. True professionals!",
+    name: "Sophie Turner",
+    occupation: "Creative Director",
+    icon: BiSolidQuoteLeft,
+  },
+  {
+    id: "6",
+    message:
+      "Professional, creative, and highly skilled—this place is a gem! The artists helped refine my concept into something truly personal and beautiful. I’m thrilled with the result and proud to wear their art on my skin.",
+    name: "Michael Davis",
+    occupation: "Photographer",
+    icon: BiSolidQuoteLeft,
+  },
 ];

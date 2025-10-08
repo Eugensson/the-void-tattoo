@@ -22,3 +22,11 @@ export type Skill = {
   label: string;
   target: number;
 };
+
+export type Testimonial = {
+  id: string;
+  message: string;
+  name: string;
+  occupation: string;
+  icon: IconType;
+};
