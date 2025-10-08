@@ -7,7 +7,10 @@ import { fadeIn, heroContainerVariant } from "@/lib/variants";
 
 export const Hero = () => {
   return (
-    <section className="relative mt-30 lg:mt-37.5 min-h-[40vh] lg:h-237 bg-hero bg-cover bg-center bg-no-repeat">
+    <section
+      id="home"
+      className="relative mt-30 lg:mt-37.5 min-h-[40vh] lg:h-237 bg-hero bg-cover bg-center bg-no-repeat overflow-hidden"
+    >
       <motion.div
         variants={heroContainerVariant}
         initial="hidden"
