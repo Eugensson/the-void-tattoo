@@ -17,3 +17,8 @@ export type GalleryItem = {
   width: number;
   height: number;
 };
+
+export type Skill = {
+  label: string;
+  target: number;
+};

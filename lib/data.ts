@@ -6,7 +6,7 @@ import {
   RiPinterestLine,
 } from "react-icons/ri";
 
-import { GalleryItem, NavItem, Social } from "@/types";
+import { GalleryItem, NavItem, Skill, Social } from "@/types";
 
 export const navData: NavItem[] = [
   { name: "Home", path: "home", offset: -150 },
@@ -74,4 +74,11 @@ export const galleryData: GalleryItem[] = [
     width: 465,
     height: 412,
   },
+];
+
+export const skillsData: Skill[] = [
+  { label: "Full Body Tattoo", target: 90 },
+  { label: "Safely Piercing", target: 80 },
+  { label: "Full Color Tattoo", target: 75 },
+  { label: "Temporary Tattoo", target: 95 },
 ];

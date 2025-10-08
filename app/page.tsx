@@ -1,6 +1,7 @@
 import { Hero } from "@/components/hero";
 import { About } from "@/components/about";
 import { Header } from "@/components/header";
+import { Skills } from "@/components/skills";
 import { Gallery } from "@/components/gallery";
 
 const Home = () => {
@@ -10,6 +11,7 @@ const Home = () => {
       <Hero />
       <About />
       <Gallery />
+      <Skills />
       <div className="h-1000" />
     </main>
   );
